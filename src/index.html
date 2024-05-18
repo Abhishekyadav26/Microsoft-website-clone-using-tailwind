@@ -9,28 +9,46 @@
     <script src="https://kit.fontawesome.com/231b0739fa.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- Nav Bar  -->
-    <div class="navbar flex justify-between items-center  p-4">
-        <div class="flex">
-            <div class="p-4 cursor-pointer ">
+    <header>
+        <!-- Nav Bar  -->
+    <div class="navbar flex justify-between items-center  p-4 lg:mx-10">
+        <div class="flex lg:order-1">
+            <div class="p-4 cursor-pointer hover:text-red-700 lg:hidden">
                 <i class="fa-solid fa-bars"></i>
             </div>
-            <div class="p-4 cursor-pointer">
+            <div class="p-4 cursor-pointer hover:text-green-700 lg:hidden">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
         </div>
-        <div class="h-auto w-auto cursor-pointer"> <a href="https://www.microsoft.com/en-in/">
+        <div class="h-auto w-auto cursor-pointer lg:order-first flex space-x-6">
+            <a href="https://www.microsoft.com/en-in/" target="_blank">
             <img src="RE1Mu3b.png" alt="microsft image">
-        </a>   
+            </a>
+            <div class="cursor-pointer space-x-4 flex mt-3 ">
+                <div class="hover:underline hidden lg:block">Microsoft 365</div>
+                <div class="hover:underline hidden lg:block">Teams</div>
+                <div class="hover:underline hidden lg:block">Copilot</div>
+                <div class="hover:underline hidden lg:block">Windows</div>
+                <div class="hover:underline hidden lg:block">Surface</div>
+                <div class="hover:underline hidden lg:block">Xbox</div>
+                <div class="hover:underline hidden sm:hidden lg:block">Support</div>
+            </div> 
         </div>
-        <div class="flex">
-            <div class="p-4 cursor-pointer ">
+        <div class="flex lg:order-last  space-x-2">
+            <div class="hover:underline hidden lg:block mt-4 cursor-pointer space-x-2">All Microsoft
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="p-4 cursor-pointer hover:text-green-700 hidden lg:block">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="p-4 cursor-pointer hover:text-blue-600 ">
                 <i class="fa-solid fa-cart-shopping"></i>
             </div>
-            <div class="p-4 cursor-pointer ">
+            <div class="p-4 cursor-pointer hover:text-yellow-400 ">
                 <i class="fa-solid fa-circle-user"></i>
             </div>
         </div>
     </div>
+    </header>
 </body>
 </html>
